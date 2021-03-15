@@ -18,4 +18,4 @@ Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatib
 
 As part of the acceptance criteria, we were told to link our page up with GitHub Pages, and provide a link for the live website as well as an image of our finished product. (Shown above.)
 
-The link for the final product is here! ---> https://sethvance26.github.io/Javascript-Password-Generator/
+The link for the final product is here! ---> https://sethvance26.github.io/Code-Quiz/
