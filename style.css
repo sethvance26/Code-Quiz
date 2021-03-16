@@ -45,6 +45,10 @@ h1 {
   text-emphasis: bold;
 }
 
+.timer-text h3 {
+  margin: 0%;
+}
+
 #stuff {
   /*change this name */
   text-align: center;
@@ -77,6 +81,8 @@ h1 {
     width: 92vw;
   }
 }
+
+  .
 
 @media screen and (max-width: 504px) {
   .large-font {
