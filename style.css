@@ -19,6 +19,20 @@ body {
   justify-content: space-between;
 }
 
+button {
+  color: white;
+  padding: 10px;
+  background-color: darkblue;
+  border-radius: 10px;
+}
+
+#answerButtons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  margin-right:500px;
+}
+
 .card .timer-text {
   font-size: xx-large;
   display: flex;
@@ -82,12 +96,13 @@ h1 {
   }
 }
 
-  .
+
 
 @media screen and (max-width: 504px) {
   .large-font {
     font-size: 2em;
   }
+
   .reset-button {
     font-size: 12px;
     width: 20ox;

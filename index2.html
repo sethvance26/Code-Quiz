@@ -10,26 +10,32 @@
 
 <body>
     <header>
-        <a href="index.html" id="highscores">Play Again</a>
+        <a href="index3.html" id="highscores">View Highscores</a>
         <div class="card timer">
-            
+            <div class="timer-text">
+                <h3 class="large-font timer-count">Time:</h3>
+                <h3> 75 </h3>
+                </div>
     </header>
 
     <main>
-        <h1>HighScores!</h1>
         <section id="stuff">
-            
-                
-            <div class="win-loss-container">
-                <div>
-                    <h2>Wins: <span class="win">0 </span> </h2>
-                    <h2>Losses: <span class="lose">0</span></h2>
-                </div>
-                <button class="reset-button">Reset Score</button>
+        <h1 id=questionHolder>Questions</h1>
+        <div id ="answerHolder">
+            <div id= "answerButtons">
+                <Button>Answer Choice 1</Button>
+                <Button>Answer Choice 2</Button>
+                <Button>Answer Choice 3</Button>
+                <Button>Answer Choice 4</Button>
+            </div>
+        </div>
+                <button class="Submit">Submit</button>
             </div>
         </section>
     </main>
-    <script src="scriptjs"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
