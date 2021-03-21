@@ -2,12 +2,11 @@
 
 ## Task At Hand
 
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
-Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+For this assignment we were given no starter code and expected to create a functional application code quiz that incorporated HTML, CSS, & JavaScript. For this coding quiz, we were instructed to make multiple choice questions that verified the user's inputs.
 
-Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+Our acceptance criteria also included having an application with a title, timer, a view highscores page, functional buttons, and basic instructions as well. 
 
-Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+I achieved a coding 
 
 
 ### Complete Product!!
