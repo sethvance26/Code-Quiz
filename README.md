@@ -6,8 +6,11 @@ For this assignment we were given no starter code and expected to create a funct
 
 Our acceptance criteria also included having an application with a title, timer, a view highscores page, functional buttons, and basic instructions as well. 
 
-I achieved a coding 
+I achieved the desired results of a coding quiz by adding dynamic HTML elements through my Javascript code, and incorporating on click functions that also hid certain elements of the page, and re-surfaced some of them later. (For example, the 'Start' or 'Next' buttons.)
 
+Once the user clicks the Start button, the quiz will begin with the first questions by hiding the title and instructions. Next, the timer will begin to count down starting at 55 seconds. The user can hover over their choices before selecting, and click on whichever answer choice they think is correct. If the choice is correct, a score counter will display the current score. If the choice is incorrect, the score will show zero and not move up. The user can then select the next question.
+
+Once all questions have been answered, a button appears to link the user to a separate highscores page. 
 
 ### Complete Product!!
 

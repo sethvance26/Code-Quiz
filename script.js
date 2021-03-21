@@ -6,22 +6,22 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement =  document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const titleInstructions = document.getElementById('title-instructions');
-timeleft = 5;
+timeleft = 55; //This variable counts how many seconds are left until the game ends. 
 let timeCounter = document.getElementById('time-count');
 let timerEl = document.getElementById('card-timer');
 let timeTitle = document.getElementById('time-title');
 
+// Above are the global variables we used.
 
-
-let countRightAnswers =0;
+let countRightAnswers =0; //This sets the starting value for checking our answers to zero, and it will go up with every right answer.
 let shuffledQuestions, currentQuestionIndex 
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame) // here we're listening for a click on the start button to run the startgame function.
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-
+//This is the function that causes the timer to count down and display a message if time runs out.
 function timer() {
     var countDown = setInterval(function() {
       timeleft--;
@@ -37,27 +37,27 @@ function timer() {
   }
  
 
-
+//This function starts the game once user clicks Start button
 function startGame() {
     timer();
     countRightAnswers =0;
-    startButton.classList.add('hide')
-    titleInstructions.classList.add('hide') 
+    startButton.classList.add('hide') //This addes the hide class to the start button after it has been clicked. (Making it hide.)
+    titleInstructions.classList.add('hide') //This hides the title and instructions so questions will appear in their place.
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
+    questionContainerElement.classList.remove('hide') //This makes the questions and answers display by un-hiding the question container.
+    setNextQuestion() 
 }
 
 
 
-function setNextQuestion() {
+function setNextQuestion() { // this functions shuffles the questions randomly. 
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
     
 }
 
-function showQuestion(question) {
+function showQuestion(question) { //This function is to display the questions and answers. 
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
@@ -79,7 +79,7 @@ function resetState() {
      (answerButtonsElement.firstChild)
     }   
 }
-
+//This function is for adding a score if the player gets the answer correct. 
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
@@ -96,20 +96,19 @@ function selectAnswer(e) {
     }
 
     if (selectedButton.dataset = correct) {
-        countRightAnswers++; //+1
+        countRightAnswers++; 
       }
     
-      //5. to show the score inside <span>
+      
       document.getElementById('right-answers').innerHTML = countRightAnswers; 
-    //   document.getElementById('answers-percent').innerHTML = ((100 * countRightAnswers)/questions.length).toFixed(0);
-      //prevent multiclicking 
+    
       document.getElementById('answer-buttons').classList.add('no-click'); 
       
     }
     
     
 
-function setStatusClass(element, correct) {
+function setStatusClass(element, correct) { //This function is verification for if the answers are correct or incorrect.
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct')
@@ -123,7 +122,7 @@ function clearStatusClass(element) {
     element.classList.remove('wrong')
 
 }
-
+//Below we made Javascript objects for our questions and answers.
 const questions = [
     {
         question: 'What tag is used to define a container for an external app or plug-in?',
@@ -163,34 +162,4 @@ const questions = [
     }]
 
 
-    function renderLastRegistered() {
-        var email = localStorage.getItem("email");
-        var password = localStorage.getItem("password");
-      
-        if (!email || !password) {
-          return;
-        }
-      
-      userEmailSpan.textContent = email;
-      userPasswordSpan.textContent = password;
-      }
-      
-      signUpButton.addEventListener("click", function(event) {
-        event.preventDefault();
-      
-        var email = document.querySelector("#email").value;
-        var password = document.querySelector("#password").value;
-      
-        if (email === "") {
-          displayMessage("error", "Email cannot be blank");
-        } else if (password === "") {
-          displayMessage("error", "Password cannot be blank");
-        } else {
-          displayMessage("success", "Registered successfully");
-      
-        localStorage.setItem("email", email);
-        localStorage.setItem("password",password);
-        renderLastRegistered();
-      }
-      });
       
