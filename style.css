@@ -1,113 +1,114 @@
-* {
-  box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family:'Courier New', Courier, monospace
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+title {
+    padding:10px;
 }
 
 body {
-  font-family: Arial;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-  background: lightgrey;
+    background-color: rgba(4, 82, 15, 0.555);
 }
 
 #highscores {
-  font-size: xx-large;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
+    margin-left:5px;
+    margin-top:5px;
+    font-size: xx-large;
+    text-align: left;
+    display: flex;
+    justify-content:space-between;
 }
 
-button {
-  color: white;
-  padding: 10px;
-  background-color: darkblue;
-  border-radius: 10px;
+.highscores-title {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+
 }
 
-#answerButtons {
-  display: flex;
-  flex-direction: column;
-  margin-left: 500px;
-  margin-right:500px;
+.card-timer {
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-bottom: -30px;
 }
 
-.card .timer-text {
-  font-size: xx-large;
-  display: flex;
-  justify-content: space-between;
-  text-align: right;
-}
 
-.timer-count {
-  padding-right: 5px;
-}
 
-.timer {
-  display: flex;
-  justify-content: space-between;
-  float: right;
-  margin-top: -30px;
-}
+/* header {
 
-h1 {
-  margin-top: 150px;
-  text-align: center;
-  font-size: 50px;
-  padding-bottom: 40px;
-  text-emphasis: bold;
-}
+} */
 
-.timer-text h3 {
-  margin: 0%;
-}
 
-#stuff {
-  /*change this name */
-  text-align: center;
-  padding: 5px;
-}
+/* body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 82, 15, 0.555);
+} */
 
-.word-guess {
-  text-align: center;
-  font-size: 30px;
-  margin-left: 500px;
-  margin-right: 500px;
-  padding-bottom: 40px;
-}
 
-.word-guess {
-  text-align: center;
-}
 
-@media screen and (max-width: 900px) {
-  main {
-    flex-direction: column;
-  }
-  .word-guess,
-  .results {
-    width: 90vw;
-  }
-  section {
+.container {
+    width: 800px;
+    max-width: 80%;
     background-color: white;
-    margin: 20px auto;
-    width: 92vw;
-  }
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
 }
 
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
 
+.btn {
+    color: black;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
 
-@media screen and (max-width: 504px) {
-  .large-font {
-    font-size: 2em;
-  }
+.btn:hover {
+    border-color: black;
+}
 
-  .reset-button {
-    font-size: 12px;
-    width: 20ox;
-  }
-  .timer {
-    height: 200px;
-  }
+.start-btn, .next-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#right-answers {
+    text-align: center;
 }
